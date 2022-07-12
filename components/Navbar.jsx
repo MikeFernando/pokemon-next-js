@@ -1,8 +1,10 @@
 import Link from 'next/link'
 
+import styles from '../styles/Navbar.module.css'
+
 export function Navbar() {
   return (
-    <ul>
+    <ul className={styles.navbar}>
         <li>
           <Link href="products/"><a>Produtos</a></Link>
         </li>

@@ -1,11 +1,12 @@
+import { Footer } from '../components/Footer'
 import { MainContainer } from '../components/MainContainer'
 
-import '../styles/global.css'
+import '../global.css'
 
 function MyApp({ Component, pageProps }) {
   return (
     <MainContainer>
-      <Component {...pageProps} /> 
+      <Component {...pageProps} />
     </MainContainer>
   )
 }
