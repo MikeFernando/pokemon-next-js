@@ -3,6 +3,7 @@
   background-color: #000;
   padding: 1.25rem .625rem;
   list-style: none;
+  justify-content: end;
 }
 
 .navbar a {
