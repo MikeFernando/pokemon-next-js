@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import styles from '../styles/Tasks.module.css'
+import styles from '../../styles/Todos.module.css'
 
 export async function getStaticProps() {
   
@@ -14,11 +14,11 @@ export async function getStaticProps() {
 
 }
 
-export default function Tasks({ todos }) {
+export default function Todos({ todos }) {
   return (
     <>
       <Head>
-        <title>Tasks</title>
+        <title>Todos</title>
       </Head>
 
       <h1>Tarefas para fazer</h1>
@@ -27,7 +27,7 @@ export default function Tasks({ todos }) {
         {todos.map(todo => {
           return (
             <li key={todo.id}>
-              {todo.title}
+                <p>{todo.title}</p>
             </li>
           )
         })}

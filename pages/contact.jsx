@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Contact() {
   return (
@@ -8,6 +9,7 @@ export default function Contact() {
       </Head>
       
       <h1>Página de contato</h1>
+      <Link href="/">Voltar</Link>
     </>
   )
 }
