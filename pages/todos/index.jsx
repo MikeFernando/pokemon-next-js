@@ -28,7 +28,7 @@ export default function Todos({ todos }) {
         {todos.map(todo => {
           return (
             <li key={todo.id}>
-                <p>{todo.title} 
+                <p>{todo.title} {' '} 
                   <Link href={`/todos/${todo.id}`}>
                     Ver mais
                   </Link>
