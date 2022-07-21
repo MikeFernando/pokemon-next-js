@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 import styles from '../../styles/Todos.module.css'
 
@@ -27,7 +28,11 @@ export default function Todos({ todos }) {
         {todos.map(todo => {
           return (
             <li key={todo.id}>
-                <p>{todo.title}</p>
+                <p>{todo.title} 
+                  <Link href={`/todos/${todo.id}`}>
+                    Ver mais
+                  </Link>
+                </p>
             </li>
           )
         })}
